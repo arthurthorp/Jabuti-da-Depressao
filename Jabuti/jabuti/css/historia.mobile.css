@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@media (max-width: 400px) {
+	.menu-desktop{
+		display: none;
+	}
+	body{
+		width: 100vw;
+		margin: 0 auto;
+		background-color: #000;
+		font-family: 'Lobster', cursive;
+		font-size: 1.4em;
+	}
+	header{
+		border-bottom: 3px #000;
+		border-bottom-style: groove;
+	}
+	main{
+		text-align: center;
+		margin: 0;
+		text-shadow: #000 1px 1px 2px;
+	}
+	.inicio-menulogo{
+		margin: 0;
+		position: relative;
+	}
+	.inicio-menulogo img{
+		margin-left: 10vw;
+		display: block;
+		width:50%;
+	}
+	.menu-pontos{
+		background-color: #000;
+	    border: hidden;
+	    padding:0;
+	    margin: 0;
+	}
+	.menu {
+	position: absolute;
+	top: 15px;
+	left: 250px;
+	}
+	.parte{
+		color:rgba(230, 126, 34,1.0);
+		margin: 0;
+		padding: 1vw;
+	}
+
+	.um{
+		background: url('http://www.achetudoeregiao.com.br/arvores/Arvores.gif/floresta1.jpg') no-repeat fixed;
+	}
+
+	.dois{
+		background: url(http://1.bp.blogspot.com/-LQ9tOxLzFOY/UBRiIHwgTlI/AAAAAAAAAPY/uGYXpdCp8wU/s1600/nuclear_explosion_by_typhon39-d30o54l.png)no-repeat fixed;
+	}
+
+	.tres{
+		background: url(http://livewallpaper.info/wp-content/uploads/2015/12/wallpaper-tumblr-hd-1920x1080-9.jpg) no-repeat fixed;
+		
+	}

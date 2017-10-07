@@ -1,0 +1,144 @@
+.menu{
+	background-color: black;
+}
+
+.menu-desktop{
+	display: none;
+}
+.gifs{
+	display: none;
+}
+.tudo{
+	width: 100vw;
+	background-color: #000;
+}
+.site{
+	margin: 0 auto;
+	padding: 0;
+}
+
+header{
+	width: inherit;
+}
+ul, li{
+	background-color: #000;
+	margin: solid 1px gray;
+	padding: 0;
+	text-align: center;
+	color: #FFF;
+	
+}
+.dropdown a{
+	color: #FFF;
+}
+
+.inicio-menulogo{
+	position: relative;
+}
+.inicio-menulogo img{
+	margin-left: 10vw;
+	display: block;
+	width:50vw;
+}
+
+.menu {
+	position: absolute;
+	top: 10%;
+	left: 70%;
+}
+header{
+	text-align: center;
+}
+.dropdown img{
+	width: 50%;
+}
+.MyStory {
+	background: url(../img/jabulindo.JPEG) no-repeat;
+	background-size: 100vw 100vw;
+	padding: 0px;
+	text-align: center;
+}
+.MyStory-son{
+	padding: 5vw;
+	text-shadow: #000 1px 1px 2px;
+}
+.MyStory img{
+	top: 0;
+	width: 100vw;
+	height: 100vw;
+}
+.carousel-div{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+}
+.carousel-legenda{
+	left: 35vw;
+	top: 16vw;
+	position: absolute;
+	text-align: center;
+	text-shadow: #000 1px 1px 2px;
+}
+footer{
+	text-align: center;
+}
+footer img{
+	width: 10%;
+	margin: 20px 10px 10px;
+}
+
+header{
+	border-bottom: 3px #000;
+	border-bottom-style: groove;
+}
+.MyStory-son h1{
+	margin-top: 0;
+	font-family: 'Mogra', cursive;
+}
+.MyStory{
+	color: #FFF;
+}
+.MyStory img{
+	display: none;
+}
+.menu-pontos{
+	background-color: #000;
+    border: hidden;
+}
+.carousel-legenda{
+	color: #FFF;
+}
+.carousel-legenda h1{
+	font-family: 'Mogra', cursive;
+}
+.carousel-inner .item img{
+	opacity: 0.7;
+}
+
+.Howstarts{
+	padding: 0px;
+	text-align: center;
+	vertical-align: center;
+	color: #FFF;
+	background: url(https://cdn.pixabay.com/photo/2016/02/18/15/36/tortoise-1207373_960_720.jpg) no-repeat;
+	background-size: 100vw 100vw;
+
+}
+.Howstarts img{
+	display: none;
+}
+
+.Howstarts-son{
+	display: block;
+	padding: 5vw;
+	text-shadow: #000 1px 1px 2px;
+}
+
+.Howstarts-son h1{
+	margin-top: 0;
+	font-family: 'Mogra', cursive;
+}
+
+footer hr{
+	border-color: #696969;
+}

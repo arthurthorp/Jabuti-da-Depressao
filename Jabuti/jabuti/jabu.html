@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Jabuti da depressão</title>
+		<meta name="viewport" content="width=device-width"/>
+		<link rel="stylesheet" type="text/css" href="./css/jabumobile.css" media="(max-width: 700px)"/>
+		<link rel="stylesheet" type="text/css" href="./css/jabudesktop.css" media="(min-width: 701px)"/>
+		<link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+		<link rel="stylesheet" href="./css/bootstrap.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				function mostrar(id){
+					document.getElementById(id).style.display='block';
+				}
+				function retirar(id){
+				document.getElementById(id).style.display='none';		 
+				}
+			})
+		</script>
+	</head>
+	<body class="tudo">
+		<div class="site">
+			<header>
+				<nav class="inicio-menulogo">
+						<img class="helpimg" src="./img/logocompleto.PNG" alt="jabu"/>
+					<div class="menu">
+						<div class="dropdown">
+							<img id="dLabel" class="menu-pontos" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick="mostrar('menu')" src="./img/menu.PNG"/>
+							<ul class="dropdown-menu" aria-labelledby="dLabel">
+								<li><a href="historia.html">Minha história</a></li>
+								<li>Como cuidar de mim</li>
+								<li><a href="frasedodia.html">Frase do dia</a></li>
+								<li>Meus parentes</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<nav class="menu-desktop">
+				<ul>
+					<li><a href="historia.html">MINHA HISTÓRIA</a></li>
+					<li>COMO CUIDAR DE MIM</li>
+					<li>MEUS PARENTES</li>
+					<li>GALERIA</li>
+					<li><a href="frasedodia.html">FRASE DO DIA</a></li>
+				</ul>
+			</nav>
+			<main>
+				<div class="MyStory"> 
+					<img src="./img/jabulindo.JPEG" alt="jabu2"/>
+					<div class="MyStory-son">
+						<h1>Minha história</h1>
+						<p>Aqui você verá desde quando eu nasci, até quando eu vim para na casa do humano que me sustenta, ou seja, a minha história toda. Queria dizer que todos os fatos aqui não fogem nem um pouco da realidade e tudo é perfeito e maravilhoso!</p>
+						<div class="botao">	
+							<button type="button" class="btn btn-info" ><a href="#">Veja mais</a></button>
+						</div>	
+					</div>
+				</div>
+				<div class="carousel-div">
+					<div class="carousel-img">
+						<div id="carousel-example-generic" class="carousel_slide" data-ride="carousel">
+						  <div class="carousel-inner" role="listbox">
+							<div class="item active">
+							  <img src="http://lh4.ggpht.com/_Qo34sfIi1pY/S5fhij-iDrI/AAAAAAAAAaE/m7wTK9dusxs/chrft01-3.jpg"/>
+							</div>
+							<div class="item">
+							  <img src="http://www.reservaromanetto.com.br/images/jabutis/jabuti-05.jpg"/>
+							</div>
+							<div class="item">
+							  <img src="http://www.reservaromanetto.com.br/images/jabutis/jabuti-08.jpg"/>
+							</div>
+						  </div>
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</div>
+						<div class="carousel-legenda">
+							<h1>Galeria</h1>
+							<div>
+								<button type="button" class="btn btn-info" ><a href="#">Veja mais</a></button>
+							</div>
+						</div>
+				</div>
+				<div class="gifs">
+					<img src="http://forgifs.com//gallery/main.php?g2_view=core.DownloadItem&g2_itemId=195525" />
+					<div class="gifs-son">
+						<h1>GIF DO DIA</h1>
+					</div>
+				</div>
+				<div class="Howstarts"> 
+					<img src="https://cdn.pixabay.com/photo/2016/02/18/15/36/tortoise-1207373_960_720.jpg" alt="jabu2"/>
+					<div class="Howstarts-son">
+						<h1>Como tudo começou</h1>
+						<p>Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você vai matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa cobra coral subir!!!
+						Pau que nasce torto, Nunca se endireita. Tchannn!! Tchannn!!...</p>
+					</div>
+				</div>
+			</main>
+		</div>
+			<footer>
+				<a href="#"><img src="http://www.clinicaviv.com.br/imagens/icone-facebook-3.png"/></a>
+				<a href="#"><img src="http://icon-icons.com/icons2/642/PNG/512/googleplus_icon-icons.com_59210.png"/></a>
+				<a href="#"><img src="http://big.assets.huffingtonpost.com/youtube-brp.png"/></a>
+				<a href="#"><img src="https://cf-static.monstersports.com.br/img/icons/Instagram-new.png"/></a>
+				<hr/>
+				<hr/>
+				<br/>
+			</footer>
+	</body>	
+</html>

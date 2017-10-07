@@ -1,0 +1,92 @@
+body{
+	margin: 0 auto;
+	height: 100%;
+	font-family: sans-serif;
+}
+.inicio-menulogo img{
+	margin: 0;
+	width: 250px;
+}
+header{
+	text-align: center;
+}
+.menu{
+	display: none;
+}
+.menu-desktop{
+	background-color: rgba(255,255,255, 0.5);
+	padding: 0.4vw;
+	padding-top: 0.4vw;
+	font-weight: bold;
+}
+
+.menu-desktop ul{
+	list-style: none;
+	margin: 0;
+}
+.menu-desktop li{
+	color: #000;	
+	display: inline;
+	text-align: center;
+	padding: 0.4vw 5vw;
+	transition: 1s;
+}
+.menu-desktop a{
+	color: #000;
+}
+
+.menu-desktop li:hover{
+	background-color: rgba(139,69,19, 0.5);
+	border-radius: 5px;
+}
+.parte{
+    position: relative;
+    margin: 0 auto;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#parallax{
+	background-image: url(../img/inicio.jpg);
+}
+#para{
+	background-image: url(../img/jabulindo.jpeg);
+	-webkit-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+    -moz-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+    -ms-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+    -o-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+    box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7);
+}
+#desenv{
+	background-image: url(../img/land.jpg);
+}
+.parte article{
+	width: 70%;
+  text-align: center;
+  margin:0 auto;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  color: rgba(189, 195, 199,1.0);
+}
+
+article h1 {font-size:40px;
+	text-align: center; 
+}
+article p {line-height: 30px; font-size:20px; margin-top:15px;}
+article p a {color:#FFF; text-decoration:none; font-size:30px;}
+
+.intro{
+  top: 0rem;
+  width: 100%;
+  background: url("http://farm4.staticflickr.com/3825/11369928353_4f005d5c8e_b.jpg") fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+
+}
+
+main{
+	position: relative;
+	top: 0;
+	z-index: 2;
+}		

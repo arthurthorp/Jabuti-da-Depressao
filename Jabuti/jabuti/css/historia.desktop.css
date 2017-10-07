@@ -1,0 +1,39 @@
+body{
+	margin: 0 auto;
+	background-image: url(../img/cali.jpg);
+	background-repeat: no-repeat;
+	width: 100vw;
+	background-size: 100vw;
+	height: 100vw; 
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Elsie', cursive;
+}
+.inicio-menulogo img{
+	margin: 0;
+	display: none;
+	width:50%;
+	}
+
+.dropdown{
+	text-align: center;
+}
+.dropdown button{
+	display: none;
+}
+.dropdown ul{
+	background-color: rgba(189, 195, 199,1.0);
+	display: inline;
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	list-style: none;
+}
+.dropdown li{
+	float: left;
+	text-decoration: none;
+
+}

@@ -1,0 +1,141 @@
+.tudo{
+	background: url("http://cdn.olhares.pt/client/files/foto/big/509/5097843.jpg") no-repeat fixed;
+	background-size: 100vw;
+	margin: 0;
+	width: 100vw;
+}
+body{
+	width: 100%;
+}
+header{
+	background-color: #000;
+	width: 100vw;
+	height: 30vh;
+	margin: 0 auto;
+}
+.inicio-menulogo{
+	width: 800px;
+	margin: 0 auto;
+}
+.inicio-menulogo img{
+	width: 250px;
+	margin: 0 auto;
+	margin-left: 35%;
+}
+.menu{
+	display: none;
+}
+main{
+	width: 800px;
+	margin: 0 auto;
+}
+
+footer{
+	background-color: #000;
+}
+
+.carousel-div{
+	display: none;
+}
+
+.menu-desktop{
+	color: #FFF;
+	background-color:#000;
+	background-image: linear-gradient(transparent, rgba(255,255,255,.3));
+}
+
+.menu-desktop{
+	width: 100vw;
+	padding: 0.5vw;
+	text-align: center;
+}
+.menu-desktop a{
+	color: #FFF;
+}
+.menu-desktop ul, li{
+	list-style: none;
+	display: inline;
+	text-align: center;
+	padding: 0.4vw 5vw;
+	transition: 2s;
+}
+.menu-desktop li:hover{
+	background-color: #FFF;
+	border-radius: 5px;
+	color: #000;
+}
+.menu-desktop a:hover{
+	color: #000;
+}
+
+.MyStory{
+	position: relative;
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+}
+.MyStory img{
+	width: 800px;
+	filter: blur(2px);
+	opacity: 0.7;
+}
+.MyStory-son{
+	position: absolute;
+	top: 25%;
+	padding: 50px;
+	text-shadow: #000 1px 1px 2px;
+}
+.MyStory-son h1{
+	font-family: 'Mogra', cursive;
+}
+
+.howstarts, .gifs{
+	float: left;
+	width:400px;
+}
+.gifs{
+	position: relative;
+}
+.gifs-son{
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	color: #FFF;
+	text-shadow: #000 1px 1px 2px;
+}
+.gifs img{
+	width: 400px;
+	height: 330px;
+}
+.Howstarts{
+	position: relative;
+	text-align: center;
+}
+.Howstarts-son{
+	color: #FFF;
+	padding: 10px;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	text-shadow: #000 1px 1px 2px;
+}
+.Howstarts-son h1, .gifs{
+	font-family: 'Mogra', cursive;
+}
+.Howstarts img{
+	width: 400px;
+	height: 330px;
+	filter: blur(1px);
+}
+
+footer{
+	text-align: center;
+}
+footer img{
+	width: 3%;
+	margin: 20px 50px 20px;
+}
+
+footer hr{
+	border-color: #696969;
+}

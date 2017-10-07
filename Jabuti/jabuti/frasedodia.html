@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Jabuti da depressão</title>
+		<meta name="viewport" content="width=device-width"/>
+		<link rel="stylesheet" type="text/css" href="./css/fraseMobile.css" media="(max-width: 700px)"/>
+		<link rel="stylesheet" type="text/css" href="./css/fraseDesktop.css" media="(min-width: 701px)"/>
+		<link href="https://fonts.googleapis.com/css?family=Cookie|Kaushan+Script|Rye|Sacramento|Satisfy" rel="stylesheet">
+		<script src="./js/jquery.min.js"></script>
+		<script>
+			$(function(){
+				$(".opcoes").hide();
+
+				$(".menu img").click(function(){
+					$(".opcoes").slideToggle();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<header class="fix">
+			<div class="logo">
+				<img class="helpimg" src="./img/logocompleto.PNG" alt="logo"/>
+			</div>
+			<div class="menu">
+				<img src="./img/menu.png" id="menu">
+				<div class="opcoes">
+					<ul>
+						<li><a href="jabu.html">INÍCIO</a></li>
+						<li><a href="historia.html">MINHA HISTÓRIA</a></li>
+						<li>COMO CUIDAR DE MIM</li>
+						<li>MEUS PARENTES</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="frase">
+				<h1>"Até a Ludimila chegou e você nem saiu de casa!"</h1>
+			</div>
+			<button><a  href="jabu.html">Voltar ao início</a></button>
+		</main>
+		<footer>
+			<a href="#"><img src="http://www.clinicaviv.com.br/imagens/icone-facebook-3.png"/></a>
+			<a href="#"><img src="http://icon-icons.com/icons2/642/PNG/512/googleplus_icon-icons.com_59210.png"/></a>
+			<a href="#"><img src="http://big.assets.huffingtonpost.com/youtube-brp.png"/></a>
+			<a href="#"><img src="https://cf-static.monstersports.com.br/img/icons/Instagram-new.png"/></a>
+			<hr/>
+			<hr/>
+		</footer>
+	</body>
+</html>
