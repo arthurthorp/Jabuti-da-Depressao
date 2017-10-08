@@ -37,18 +37,16 @@ body{
 	cursor: pointer;
 }
 .opcoes{
+	transition: 0.4s;
 	box-shadow: 0 4px 30px 0 #000, 0 4px 30px 0 #000;
 	position: fixed;
 	right: 0;
-	top: 16.5%;
+	top: 16.8%;
 	padding: 5px;
-	background-color: rgba(0,0,0,0.8);
+	background-color: #000;
 	border-bottom-left-radius: 5px;
 	color: #fff;
- 	text-shadow: 1px 1px 2px #fff, 0 0 25px #660066, 0 0 5px  #0000ff;
-}
-.opcoes:hover{
-	background-color: #000;
+ 	text-shadow: 1px 1px 2px #fff, 0 0 25px purple, 0 0 5px  green;
 }
 .opcoes ul, li{
 	margin: 10px;
@@ -56,6 +54,9 @@ body{
 	padding: 0;
 	text-align: justify-all;
 	transition: 0.2s;
+}
+.opcoes li{
+	margin-bottom: 30px;
 }
 .opcoes li:hover{
 	background-color: rgba(255,255,255,0.5);
@@ -71,7 +72,7 @@ body{
 	transition: 0.2s;
 	text-align: center;
 	text-shadow: 2px 2px 4px #000000;
-	font-size: 1.8em;
+	font-size: 1.5em;
 	color: #000;
 
 }
@@ -122,6 +123,7 @@ footer img{
 
 footer hr{
 	border-color: #696969;
+	margin: 0;
 }
 
 a{	

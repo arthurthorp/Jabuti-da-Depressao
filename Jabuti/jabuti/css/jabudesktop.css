@@ -1,11 +1,11 @@
 .tudo{
 	background: url("http://cdn.olhares.pt/client/files/foto/big/509/5097843.jpg") no-repeat fixed;
-	background-size: 100vw;
+	background-size: 100%;
 	margin: 0;
 	width: 100vw;
 }
 body{
-	width: 100%;
+	margin: 0;
 }
 header{
 	background-color: #000;
@@ -45,7 +45,6 @@ footer{
 }
 
 .menu-desktop{
-	width: 100vw;
 	padding: 0.5vw;
 	text-align: center;
 }

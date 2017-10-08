@@ -5,17 +5,47 @@
 		<title>Jabuti da depressão</title>
 		<meta name="viewport" content="width=device-width"/>
 		<link rel="stylesheet" type="text/css" href="./css/fraseMobile.css" media="(max-width: 700px)"/>
-		<link rel="stylesheet" type="text/css" href="./css/fraseDesktop.css" media="(min-width: 701px)"/>
+		<link rel="stylesheet" type="text/css" href="./css/fraseDesktop.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Cookie|Kaushan+Script|Rye|Sacramento|Satisfy" rel="stylesheet">
 		<script src="./js/jquery.min.js"></script>
 		<script>
 			$(function(){
-				$(".opcoes").hide();
+				function esconder(){
+					$(".opcoes").css({"width": 0
+								,"padding": 0
+								,"height": 0
+								,"background": "transparent"
+								,"font-size": 0
+							});
+				}
+				function mostrar(){
+					$(".opcoes").css({
+						"width": "300px"
+						,"padding": 0
+						,"height": "100%"
+						,"background": "black"
+						,"font-size": "1em"
+					});
 
-				$(".menu img").click(function(){
-					$(".opcoes").slideToggle();
+				}
+
+				esconder();
+
+				$(".abrir").click(function(){
+					mostrar();
+					$(".menu .abrir").attr("class","fechar");
 				})
-			})
+				$(".fechar").on("click",function(){
+					
+					esconder();
+					$(".fechar").attr("class","abrir");
+					
+				})
+				$(".fix").mouseleave(function(){
+					esconder();
+					$(".fechar").attr("class","abrir");
+				})
+			});
 		</script>
 	</head>
 	<body>
@@ -24,7 +54,7 @@
 				<img class="helpimg" src="./img/logocompleto.PNG" alt="logo"/>
 			</div>
 			<div class="menu">
-				<img src="./img/menu.png" id="menu">
+				<img src="./img/menu.png" class="abrir">
 				<div class="opcoes">
 					<ul>
 						<li><a href="jabu.html">INÍCIO</a></li>
@@ -46,8 +76,6 @@
 			<a href="#"><img src="http://icon-icons.com/icons2/642/PNG/512/googleplus_icon-icons.com_59210.png"/></a>
 			<a href="#"><img src="http://big.assets.huffingtonpost.com/youtube-brp.png"/></a>
 			<a href="#"><img src="https://cf-static.monstersports.com.br/img/icons/Instagram-new.png"/></a>
-			<hr/>
-			<hr/>
 		</footer>
 	</body>
 </html>

@@ -1,82 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<title>Minha História</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="./css/bootstrap.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="./css/historia.mobile.css" media="(max-width: 460px)" />
-	<link rel="stylesheet" type="text/css" href="./css/histdesk.css" media="(min-width: 401px)">
-	<script type="text/javascript" src="./src/teste.js"></script>
-	<meta name="viewport" content="width=device-width">
-	<script type="text/javascript">
-		function mostrar(id){
-			document.getElementById(id).style.display='block';
-		}
-		 function retirar(id){
-		document.getElementById(id).style.display='none';		 
-	 }
-	$('div.parte').each(function(){
-    var $obj = $(this);
-
-    $(window).scroll(function() {
-        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-
-        var bgpos = '50% '+ yPos + 'px';
-
-        $obj.css('background-position', bgpos );
-
-    }); 
-});
-	</script>
-</head>
-<body>
-	<header class="intro">
-			<nav class="inicio-menulogo">
-					<img src="./img/logocompleto.PNG" alt="jabu"/>
-				<div class="menu">
-					<div class="dropdown">
-						<button id="dLabel" class="menu-pontos" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick="mostrar('menu')" >
-						  <img src="./img/menu.PNG"/>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dLabel" id="menu">
-							<li class="teste"><a href="jabu.html">INÍCIO</a></li>
-							<li class="teste"><a href="#">Como cuidar de mim</a></li>
-							<li class="teste"><a href="frasedodia.html">Frase do dia</a></li>
-							<li class="teste"><a href="#">Meus parentes</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-			<nav class="menu-desktop">
-				<ul>
-					<li><a href="jabu.html">INÍCIO</a></li>
-					<li>COMO CUIDAR DE MIM</li>
-					<li>MEUS PARENTES</li>
-					<li>GALERIA</li>
-					<li><a href="frasedodia.html">FRASE DO DIA</a></li>
+	<head>
+		<title>Historia</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="./css/historia.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<script src="./js/jquery.min.js"></script>
+		<script type="text/javascript"></script>
+		<script src="./js/jquery.scrolly.min.js"></script>
+		<script src="./js/jquery.scrollex.min.js"></script>
+		<script src="./js/skel.min.js"></script>
+		<script src="./js/util.js"></script>
+		<script src="./js/main.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<a href="#menu"><span>Menu</span></a>
+		</header>
+			<nav id="menu">
+				<ul class="links">
+						<li><a href="jubu.html">INÍCIO</a></li>
+						<li><a href="#">HISTÓRIA</a></li>
+						<li><a href="#">GALERIA</a></li>
+						<li><a href="#">QUEM SOMOS NÓS</a></li>
+						<li><a href="frasedodia.html">FRASE DO DIA</a></li>
 				</ul>
 			</nav>
-		</header>
-	<main>
-		<div class="parte um" id="parallax" data-speed="20">
-			<article>
-					<h3>O começo</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue eu libero sit amet varius. Proin gravida ex et ante pulvinar, et dictum elit fermentum. Phasellus lacinia eros in tempus mollis. Etiam ac tortor efficitur, condimentum leo vitae, vehicula lacus. Donec commodo non leo eget scelerisque. Nullam egestas tortor at quam ultricies, eget laoreet arcu varius. In eu mauris fermentum tortor cursus commodo non sit amet eros. Suspendisse magna leo, maximus et neque quis, interdum pretium diam. Maecenas sit amet erat eu mi feugiat euismod. Morbi posuere risus gravida lacus lacinia blandit.</p>
-			</article>		
-		</div>
-		
-		<div class="parte dois" id="para" data-speed="10">
+				<section id="banner" class="bg-img" data-bg="../images/jabuti.jpg">
+					<div class="inner">
+						<header>
+							<h1>Jabuti da depressão</h1>
+						</header>
+					</div>
+
+				</section>
+
 			
-			<article>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue eu libero sit amet varius. Proin gravida ex et ante pulvinar, et dictum elit fermentum. Phasellus lacinia eros in tempus mollis. Etiam ac tortor efficitur, condimentum leo vitae, vehicula lacus. Donec commodo non leo eget scelerisque. Nullam egestas tortor at quam ultricies, eget laoreet arcu varius. In eu mauris fermentum tortor cursus commodo non sit amet eros. Suspendisse magna leo, maximus et neque quis, interdum pretium diam. Maecenas sit amet erat eu mi feugiat euismod. Morbi posuere risus gravida lacus lacinia blandit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue eu libero sit amet varius. Proin gravida ex et ante pulvinar, et dictum elit fermentum. Phasellus lacinia eros in tempus mollis. Etiam ac tortor efficitur, condimentum leo vitae, vehicula lacus. Donec commodo non leo eget scelerisque. Nullam egestas tortor at quam</p>
-			</article>
-		</div>
-		<div class="parte tres" id="desenv" data-speed="5">
-			<article>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue eu libero sit amet varius. Proin gravida ex et ante pulvinar, et dictum elit fermentum. Phasellus lacinia eros in tempus mollis. Etiam ac tortor efficitur, condimentum leo vitae, vehicula lacus. Donec commodo non leo eget scelerisque. Nullam egestas tortor at quam ultricies, eget laoreet arcu varius. In eu mauris fermentum tortor cursus commodo non sit amet eros. Suspendisse magna leo, maximus et neque quis, interdum pretium diam. Maecenas sit amet erat eu mi feugiat euismod. Morbi posuere risus gravida lacus lacinia blandit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue eu libero sit amet varius. Proin gravida ex et ante pulvinar, et dictum elit fermentum. Phasellus lacinia eros in tempus mollis. Etiam ac tortor efficitur, condimentum leo vitae, vehicula lacus. Donec commodo non leo eget scelerisque. Nullam egestas tortor at quam ultricies, eget laoreet arcu varius. In eu mauris fermentum torto.</p>
-			</article>
-		</div>
-	</main>	
-</body>
+				<section id="one" class="wrapper post bg-img" data-bg="../images/paisagem.jpg">
+					<div class="inner">
+						<article class="box">
+							<header>
+								<h2>O início dessa história</h2>
+								<p>01.01.2017</p>
+							</header>
+							<div class="content">
+								<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+							</div>
+						</article>
+					</div>
+					<a href="#two" class="more">Learn More</a>
+				</section>
+
+			<!-- dois -->
+				<section id="two" class="wrapper post bg-img" data-bg="../images/treinamento.jpg">
+					<div class="inner">
+						<article class="box">
+							<header>
+								<h2>O treinamento</h2>
+								<p>12.21.2016</p>
+							</header>
+							<div class="content">
+								<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+							</div>
+						</article>
+					</div>
+					<a href="#three" class="more">Learn More</a>
+				</section>
+
+			<!-- tres -->
+				<section id="three" class="wrapper post bg-img" data-bg="../images/eu.jpg">
+					<div class="inner">
+						<article class="box">
+							<header>
+								<h2>Atualmente</h2>
+								<p>11.08.2017</p>
+							</header>
+							<div class="content">
+								<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+							</div>
+						</article>
+					</div>
+				</section>
+	</body>
 </html>
