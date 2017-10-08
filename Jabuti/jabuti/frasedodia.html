@@ -21,22 +21,20 @@
 				function mostrar(){
 					$(".opcoes").css({
 						"width": "300px"
-						,"padding": 0
+						,"padding": "5px"
 						,"height": "100%"
 						,"background": "black"
 						,"font-size": "1em"
 					});
 
 				}
-
 				esconder();
 
 				$(".abrir").click(function(){
 					mostrar();
 					$(".menu .abrir").attr("class","fechar");
 				})
-				$(".fechar").on("click",function(){
-					
+				$(".fechar").click(function(){
 					esconder();
 					$(".fechar").attr("class","abrir");
 					
@@ -74,7 +72,7 @@
 		<footer>
 			<a href="#"><img src="http://www.clinicaviv.com.br/imagens/icone-facebook-3.png"/></a>
 			<a href="#"><img src="http://icon-icons.com/icons2/642/PNG/512/googleplus_icon-icons.com_59210.png"/></a>
-			<a href="#"><img src="http://big.assets.huffingtonpost.com/youtube-brp.png"/></a>
+			<a href="https://www.youtube.com/channel/UCF1ZXhGXYkJmnB-VLH5ZHxQ"><img src="http://big.assets.huffingtonpost.com/youtube-brp.png"/></a>
 			<a href="#"><img src="https://cf-static.monstersports.com.br/img/icons/Instagram-new.png"/></a>
 		</footer>
 	</body>
