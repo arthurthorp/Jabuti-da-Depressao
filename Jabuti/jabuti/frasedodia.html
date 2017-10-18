@@ -8,41 +8,10 @@
 		<link rel="stylesheet" type="text/css" href="./css/fraseDesktop.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Cookie|Kaushan+Script|Rye|Sacramento|Satisfy" rel="stylesheet">
 		<script src="./js/jquery.min.js"></script>
+		<script src="./plugins/slidemenu.js"/></script>
 		<script>
 			$(function(){
-				function esconder(){
-					$(".opcoes").css({"width": 0
-								,"padding": 0
-								,"height": 0
-								,"background": "transparent"
-								,"font-size": 0
-							});
-				}
-				function mostrar(){
-					$(".opcoes").css({
-						"width": "300px"
-						,"padding": "5px"
-						,"height": "100%"
-						,"background": "black"
-						,"font-size": "1em"
-					});
-
-				}
-				esconder();
-
-				$(".abrir").click(function(){
-					mostrar();
-					$(".menu .abrir").attr("class","fechar");
-				})
-				$(".fechar").click(function(){
-					esconder();
-					$(".fechar").attr("class","abrir");
-					
-				})
-				$(".fix").mouseleave(function(){
-					esconder();
-					$(".fechar").attr("class","abrir");
-				})
+				$("body").slideMenu();
 			});
 		</script>
 	</head>
@@ -54,6 +23,7 @@
 			<div class="menu">
 				<img src="./img/menu.png" class="abrir">
 				<div class="opcoes">
+					<img src="./img/X.png" alt="fechar" class="fechar" />
 					<ul>
 						<li><a href="jabu.html">INÍCIO</a></li>
 						<li><a href="historia.html">MINHA HISTÓRIA</a></li>
@@ -65,14 +35,14 @@
 		</header>
 		<main>
 			<div class="frase">
-					<h1>"Até a Ludimila chegou e você nem saiu de casa!"</h1>
+					<h1>"Até a Ludmilla chegou e você nem saiu de casa!"</h1>
 			</div>
 			<button><a  href="jabu.html">Voltar ao início</a></button>
 		</main>
 		<footer>
 			<a href="#"><img src="http://www.clinicaviv.com.br/imagens/icone-facebook-3.png"/></a>
 			<a href="#"><img src="http://icon-icons.com/icons2/642/PNG/512/googleplus_icon-icons.com_59210.png"/></a>
-			<a href="https://www.youtube.com/channel/UCF1ZXhGXYkJmnB-VLH5ZHxQ"><img src="http://big.assets.huffingtonpost.com/youtube-brp.png"/></a>
+			<a href="https://www.youtube.com"><img src="http://big.assets.huffingtonpost.com/youtube-brp.png"/></a>
 			<a href="#"><img src="https://cf-static.monstersports.com.br/img/icons/Instagram-new.png"/></a>
 		</footer>
 	</body>
