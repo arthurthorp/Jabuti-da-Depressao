@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body{
+	margin: 0;
+	background: url(http://www.imagenslivres.com/wp-content/uploads/2015/12/Fundo-de-Madeira-Envelhecida-Textura.jpg) fixed;
+	background-size: 100%;
+}
+
+.fix{
+	position: fixed;
+	top:0;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.8);
+	box-shadow: 0 4px 30px 0 #000, 0 4px 30px 0 #000;
+	transition: 0.2s;
+}
+.fix:hover{
+	background-color: #000;
+}
+.logo img{
+	width: 10vw;
+	margin-left: 1vw;
+}
+.logo, .menu{
+	float: left;
+}
+
+.opcoes  img{
+	margin-top: 15px;
+	margin-right: 10px;
+	width: 0;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+.menu .abrir{
+	width: 6vw;
+	position: absolute;
+	right: 1%;
+}
+.menu .abrir:hover{
+	cursor: pointer;
+}
+.opcoes{
+	position: absolute;
+	width: 0;
+	transition: 0.4s;
+	box-shadow: 0 4px 30px 0 #000, 0 4px 30px 0 #000;
+	position: fixed;
+	right: 0;
+	background-color: #000;
+	color: #fff;
+ 	text-shadow: 1px 1px 2px #fff, 0 0 25px purple, 0 0 5px  green;
+}
+.opcoes ul, li{
+	list-style: none;
+	padding: 0;
+	text-align: justify-all;
+	border: none;
+}
+.opcoes ul{
+	margin-top: 110px;
+	padding: 0;
+}
+.opcoes li{
+	margin-bottom: 30px;
+	padding: 20px;
+	transition: 0.2s;
+}
+.opcoes li:hover{
+	background-color: rgba(255,255,255,0.5);
+	color: #000;
+}
+a{	
+	font-size: 1.2em;
+	color: #FFF;
+	text-decoration: none;
+	transition: 0.2s;
+}
+a:hover{
+	color: #000;
+}
