@@ -3,64 +3,17 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>J.D.|GALERIA</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="./css/galeria.css"/>
 	<script src="./js/jquery.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.waterwheelCarousel.min.js"></script>
 	<script src="./plugins/slidemenu.js"></script>
 	<script>
 		$(function(){
 
 			$("body").slideMenu();
 
-				var carousel = $("#carousel").waterwheelCarousel({
-		          flankingItems: 3,
-		          movingToCenter: function ($item) {
-		            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
-		          },
-		          movedToCenter: function ($item) {
-		            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
-		          },
-		          movingFromCenter: function ($item) {
-		            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
-		          },
-		          movedFromCenter: function ($item) {
-		            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
-		          },
-		          clickedCenter: function ($item) {
-		            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
-		          }
-		        });
-
-		        $('#prev').bind('click', function () {
-		          carousel.prev();
-		          return false
-		        });
-
-		        $('#next').bind('click', function () {
-		          carousel.next();
-		          return false;
-		        });
-
-		        $('#reload').bind('click', function () {
-		          newOptions = eval("(" + $('#newoptions').val() + ")");
-		          carousel.reload(newOptions);
-		          return false;
-				});
 		});
 	</script>
-	<style type="text/css">
-	  #carousel {
-	    width:800px;
-	    height: 300px;
-	    margin: 180px auto 0;
-	  }
-	  #carousel img {
-	    display: hidden; /* hide images until carousel prepares them */
-	    cursor: pointer; /* not needed if you wrap carousel items in links */
-	    width: 380px;
-	    height: 280px;
-	  }
-	</style>
 </head>
 <body>
 	<header class="fix">
@@ -74,20 +27,36 @@
 				<ul>
 					<li><a href="jabu.html">INÍCIO</a></li>
 					<li><a href="historia.html">MINHA HISTÓRIA</a></li>
-					<li>COMO CUIDAR DE MIM</li>
-					<li>MEUS PARENTES</li>
+					<li><a href="#">COMO CUIDAR DE MIM</a></li>
+					<li><a href="#">MEUS PARENTES</a></li>
 					<li><a href="frasedodia.html">FRASE DO DIA</a></li>
 				</ul>
 			</div>
 		</div>
-	</header>
-	<div class="divona">
-		<div id="carousel">
-			<img src="http://www.reservaromanetto.com.br/images/jabutis/jabuti-05.jpg" alt="1" />
-			<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Red_Footed_Tortoise_2.jpg" alt="2" />
-			<img src="http://lh4.ggpht.com/_Qo34sfIi1pY/S5fhij-iDrI/AAAAAAAAAaE/m7wTK9dusxs/chrft01-3.jpg" alt="3" />
-			<img src="http://www.ninha.bio.br/biologia/repteis_anfibios/jabuti-piranga3.jpg" alt="4" />
+		</header>
+		<div class="imagens">
+		    <div class="item">
+		      <img src="./img/fig1.JPG" alt="Jabuti deitado">
+		      <div class="legenda">
+		        <h3>MEU PAPAI NO CHÃO</h3>
+		        <p>Nesse dia ele me ensinou como se fingir de morto!</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="http://www.ninha.bio.br/biologia/repteis_anfibios/jabuti-piranga3.jpg" alt="Jabuti na grama">
+		      <div class="legenda">
+		        <h3>MINHA FLOR</h3>
+		        <p>Meu 1º e único amor, Joana, deitada na grama... <3!</p>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Tortuga_morrocoy_Sabanero.jpg/800px-Tortuga_morrocoy_Sabanero.jpg" alt="Jabuti nos trevos">
+		    	<div class="legenda">
+		        <h3>MINHA GRAMA</h3>
+		        <p>Eu e minha refeição favorita!</p>
+		    </div>
 		</div>
-	</div>
 </body>
 </html>
