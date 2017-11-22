@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Poiret+One');
 
 body{
 	background: url(http://www.imagenslivres.com/wp-content/uploads/2015/12/Fundo-de-Madeira-Envelhecida-Textura.jpg) fixed;
@@ -65,7 +66,8 @@ body{
 	padding: 0;
 }
 .opcoes li{
-	margin-bottom: 30px;
+	margin-bottom: 6px;
+	border-bottom: groove 1px #DDD;
 	padding: 20px;
 	transition: 0.2s;
 }
@@ -75,18 +77,28 @@ body{
 }
 a{	
 	width: inherit;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #FFF;
 	text-decoration: none;
 	transition: 0.2s;
+	font-family: sans-serif;
 }
 a:hover{
+	text-decoration: none;
 	color: #000;
 }
 
 .imagens{
 	margin-top: 110px;
+}
 
+h1{
+	font-size: 5em;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	color: #FFF;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: center;
 }
 
 .item{

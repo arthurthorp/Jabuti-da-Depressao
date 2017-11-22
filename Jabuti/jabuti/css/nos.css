@@ -65,7 +65,8 @@ body{
 	padding: 0;
 }
 .opcoes li{
-	margin-bottom: 30px;
+	margin-bottom: 6px;
+	border-bottom: groove 1px #DDD;
 	padding: 20px;
 	transition: 0.2s;
 }
@@ -75,7 +76,7 @@ body{
 }
 a{	
 	width: inherit;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #FFF;
 	text-decoration: none;
 	transition: 0.2s;

@@ -60,19 +60,30 @@ body{
 	padding: 0;
 	text-align: justify-all;
 	border: none;
+	font-size: 1em;
 }
 .opcoes ul{
 	margin-top: 110px;
 	padding: 0;
 }
 .opcoes li{
-	margin-bottom: 30px;
+	letter-spacing: 0;
+	margin-bottom: 6px;
 	padding: 20px;
 	transition: 0.2s;
+	border-bottom: groove 1px #DDD;
 }
 .opcoes li:hover{
 	background-color: rgba(255,255,255,0.5);
 	color: #000;
+}
+.opcoes a{
+	width: inherit;
+	font-size: 1.1em;
+	color: #FFF;
+	text-decoration: none;
+	transition: 0.2s;
+	font-family: sans-serif;
 }
 .frase{
 	vertical-align: middle;

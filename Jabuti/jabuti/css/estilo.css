@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Vollkorn+SC');
+body{
+  margin: 0;
+  background-image: url(https://media.mnn.com/assets/images/2017/03/brimmon-oak.jpg.838x0_q80.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat:no-repeat;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
+.fix{
+  right: 0;
+  position: fixed;
+  top:0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.8);
+  box-shadow: 0 4px 30px 0 #000, 0 4px 30px 0 #000;
+  transition: 0.2s;
+}
+.fix:hover{
+  background-color: #000;
+}
+.logo img{
+  width: 10vw;
+  margin-left: 1vw;
+}
+.logo, .menu{
+  float: left;
+}
+
+.opcoes  img{
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 0;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.menu .abrir{
+  top: 10px;
+  width: 6vw;
+  position: absolute;
+  right: 1%;
+}
+.menu .abrir:hover{
+  cursor: pointer;
+}
+.opcoes{
+  position: absolute;
+  width: 0;
+  transition: 0.4s;
+  box-shadow: 0 4px 30px 0 #000, 0 4px 30px 0 #000;
+  position: fixed;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  text-shadow: 1px 1px 2px #fff, 0 0 25px purple, 0 0 5px  green;
+}
+.opcoes ul, li{
+  list-style: none;
+  padding: 0;
+  text-align: justify-all;
+  border: none;
+}
+.opcoes ul{
+  margin-top: 110px;
+  padding: 0;
+}
+.opcoes li{
+  margin-bottom: 6px;
+  border-bottom: groove 1px #DDD;
+  padding: 20px;
+  transition: 0.2s;
+}
+.opcoes li:hover{
+  background-color: rgba(255,255,255,0.5);
+  color: #000;
+}
+a{  
+  width: inherit;
+  font-size: 1.1em;
+  color: #FFF;
+  text-decoration: none;
+  transition: 0.2s;
+  font-family: sans-serif;
+}
+a:hover{
+  color: #000;
+}
+.line{
+  width: 0px;
+  height: 40px;
+  border: 1.5px dotted #000;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+main{
+  margin-top: 10%;
+}
+
+.parent{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:500px;
+    height:350px;
+    overflow:hidden;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+.border{
+  width: 530px;
+  height: 425px;
+  border: 1.5px dotted #000;
+  margin: 0 auto;
+  margin-bottom: 10px; 
+}
+.border h2{
+  font-family: 'Vollkorn SC', serif;
+  text-align: center;
+  margin-bottom: 0; 
+}
+h1{
+  
+  text-align: center;
+  font-family: 'Cinzel', serif; 
+}
+.parent figure{
+ margin:0;
+ padding:0;
+ position:relative;
+ cursor:pointer;
+}
+.parent  figure img{
+  display:block;
+   position:relative;
+   z-index:10;
+   margin:-15px 0;
+   width: 100%;
+   height: 100%;
+}
+.parent figure figcaption{
+  display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.parent figure h2{
+  font-family:'Lato';
+   color:#fff;
+   font-size:20px;
+   text-align:center;
+}
+.parent figure p{
+  display:block;
+    font-family:'Lato';
+    font-size:12px;
+    line-height:18px;
+    margin: 0;
+    color:#fff;
+    text-align:justify;
+}
+.parent figure figcaption{
+  top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   padding:29px 44px;
+   background-color:rgba(44, 62, 80,1.0);
+   text-align:center;
+   backface-visibility:hidden;
+   -webkit-transform:rotateY(-180deg);
+   -moz-transform:rotateY(-180deg);
+   transform:rotateY(-180deg);
+   -webkit-transition:all .5s;
+   -moz-transition:all .5s;
+   transition:all .5s;
+}
+
+.parent figure img {
+  backface-visibility:hidden;
+   -webkit-transition:all .5s;
+   -moz-transition:all .5s;
+   transition:all .5s;
+}
+.parent figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+}
+
+.parent figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0);
+}
